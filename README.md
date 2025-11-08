@@ -145,17 +145,16 @@ The system uses **LangGraph** to orchestrate 5 specialized validation agents tha
 1. **Clone the repository**
 ```bash
 git clone <repo-url>
-cd prototype_1
+cd claims-guardian-ai
 ```
 
 2. **Set up environment variables**
 ```bash
-cp backend/.env.example backend/.env
+cp .env.example .env
 ```
 
-Edit `backend/.env`:
+Edit `.env`:
 ```env
-DATABASE_URL=postgresql://claims_user:claims_pass@claims_postgres:5432/claims_guardian
 ANTHROPIC_API_KEY=your_api_key_here
 ```
 
@@ -186,23 +185,6 @@ This will populate the database with:
 ```bash
 # Check logs to confirm initialization completed
 docker logs claims_backend
-```
-
-### Troubleshooting
-
-**If you encounter authentication errors after rebranding:**
-
-The old database volume may still have old credentials. To fix:
-
-```bash
-# Stop all services and remove volumes
-docker compose down -v
-
-# Restart with fresh database
-docker compose up -d --build
-
-# Initialize the database
-docker exec claims_backend python scripts/init_database.py
 ```
 
 ### Access the Application
