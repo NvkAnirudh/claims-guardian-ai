@@ -1,0 +1,333 @@
+{
+  "25": {
+    "code": "25",
+    "description": "Significant, Separately Identifiable Evaluation and Management Service by the Same Physician on the Same Day of the Procedure or Other Service",
+    "usage": "When an E/M service is performed on the same day as a procedure or other service",
+    "rules": [
+      "Must be appended to E/M codes only",
+      "Indicates a significant, separately identifiable E/M service",
+      "Different diagnosis or separate documented service required",
+      "Cannot be used with preventive medicine codes (99381-99397)"
+    ],
+    "common_with": ["99201-99215", "99281-99285"],
+    "common_errors": [
+      "Using with preventive codes",
+      "Insufficient documentation of separate service",
+      "Using when procedure is inherent to E/M"
+    ]
+  },
+  "50": {
+    "code": "50",
+    "description": "Bilateral Procedure",
+    "usage": "When identical procedures are performed on both sides of the body during the same operative session",
+    "rules": [
+      "Only for procedures that can be performed bilaterally",
+      "Both procedures must be performed during same session",
+      "Payment is typically 150% of single procedure",
+      "Cannot be used with codes already designated as bilateral"
+    ],
+    "common_with": ["Surgical procedures", "Radiology procedures"],
+    "common_errors": [
+      "Using on procedures already bilateral",
+      "Incorrect reimbursement calculation"
+    ]
+  },
+  "51": {
+    "code": "51",
+    "description": "Multiple Procedures",
+    "usage": "When multiple procedures are performed at the same session by the same provider",
+    "rules": [
+      "Apply to secondary and additional procedures",
+      "Primary procedure billed without modifier",
+      "Secondary procedures typically reimbursed at reduced rate (50-80%)",
+      "Some payers may not require this modifier"
+    ],
+    "common_with": ["Surgical procedures"],
+    "common_errors": [
+      "Applying to primary procedure",
+      "Not following payer-specific rules"
+    ]
+  },
+  "52": {
+    "code": "52",
+    "description": "Reduced Services",
+    "usage": "When a service or procedure is partially reduced or eliminated at the physician's discretion",
+    "rules": [
+      "Indicates service was less than usually required",
+      "Documentation must support reduced service",
+      "May result in reduced reimbursement",
+      "Cannot be used with E/M codes"
+    ],
+    "common_with": ["Surgical procedures", "Diagnostic procedures"],
+    "common_errors": [
+      "Using with E/M codes",
+      "Insufficient documentation"
+    ]
+  },
+  "53": {
+    "code": "53",
+    "description": "Discontinued Procedure",
+    "usage": "When a physician elects to terminate a surgical or diagnostic procedure due to extenuating circumstances or those that threaten the well-being of the patient",
+    "rules": [
+      "Only for procedures started but not completed",
+      "Must document reason for discontinuation",
+      "Patient safety must be the reason",
+      "Reimbursement varies by payer"
+    ],
+    "common_with": ["Surgical procedures", "Diagnostic procedures"],
+    "common_errors": [
+      "Using for procedures never started",
+      "Insufficient documentation of medical necessity"
+    ]
+  },
+  "59": {
+    "code": "59",
+    "description": "Distinct Procedural Service",
+    "usage": "Identify procedures/services that are not normally reported together, but are appropriate under the circumstances",
+    "rules": [
+      "Most commonly misused modifier",
+      "Only when no other modifier describes the situation",
+      "Must document why procedures are distinct",
+      "Different session, different procedure/surgery, different site, separate incision, separate lesion, or separate injury"
+    ],
+    "common_with": ["All procedure codes"],
+    "common_errors": [
+      "Overuse to bypass bundling edits",
+      "Using when X{EPSU} modifiers are more appropriate",
+      "Insufficient documentation of distinct service"
+    ],
+    "alternatives": ["XE", "XP", "XS", "XU"]
+  },
+  "76": {
+    "code": "76",
+    "description": "Repeat Procedure or Service by Same Physician or Other Qualified Health Care Professional",
+    "usage": "When a procedure or service is repeated by the same physician on the same day",
+    "rules": [
+      "For procedures repeated on the same day",
+      "By the same physician/provider",
+      "Documentation must justify medical necessity",
+      "Different from modifier 77 (different physician)"
+    ],
+    "common_with": ["Radiology", "Laboratory", "Diagnostic procedures"],
+    "common_errors": [
+      "Confusing with modifier 77",
+      "Not documenting medical necessity"
+    ]
+  },
+  "77": {
+    "code": "77",
+    "description": "Repeat Procedure by Another Physician or Other Qualified Health Care Professional",
+    "usage": "When a procedure or service is repeated by a different physician on the same day",
+    "rules": [
+      "For procedures repeated on the same day",
+      "By a different physician/provider",
+      "Documentation must justify medical necessity",
+      "Different from modifier 76 (same physician)"
+    ],
+    "common_with": ["Radiology", "Laboratory", "Diagnostic procedures"],
+    "common_errors": [
+      "Confusing with modifier 76",
+      "Not documenting medical necessity"
+    ]
+  },
+  "78": {
+    "code": "78",
+    "description": "Unplanned Return to the Operating/Procedure Room by the Same Physician Following Initial Procedure for a Related Procedure During the Postoperative Period",
+    "usage": "When patient returns for related complication during postoperative period",
+    "rules": [
+      "Must be during global postoperative period",
+      "Related to original procedure",
+      "By same physician",
+      "Unplanned return"
+    ],
+    "common_with": ["Surgical procedures"],
+    "common_errors": [
+      "Using for planned procedures",
+      "Using for unrelated procedures"
+    ]
+  },
+  "79": {
+    "code": "79",
+    "description": "Unrelated Procedure or Service by the Same Physician During the Postoperative Period",
+    "usage": "When an unrelated procedure is performed during the postoperative period of another procedure",
+    "rules": [
+      "Must be during global postoperative period",
+      "Unrelated to original procedure",
+      "By same physician",
+      "Documentation must show procedures are unrelated"
+    ],
+    "common_with": ["Surgical procedures", "E/M codes"],
+    "common_errors": [
+      "Using for related procedures",
+      "Insufficient documentation of unrelated nature"
+    ]
+  },
+  "91": {
+    "code": "91",
+    "description": "Repeat Clinical Diagnostic Laboratory Test",
+    "usage": "When a laboratory test is repeated on the same day to obtain subsequent results",
+    "rules": [
+      "Only for laboratory tests",
+      "Same day repeats only",
+      "Medical necessity must be documented",
+      "Cannot be used for specimen re-runs"
+    ],
+    "common_with": ["Laboratory codes (80000-89999)"],
+    "common_errors": [
+      "Using for quality control re-runs",
+      "Not documenting medical necessity"
+    ]
+  },
+  "95": {
+    "code": "95",
+    "description": "Synchronous Telemedicine Service Rendered Via Real-Time Interactive Audio and Video Telecommunications System",
+    "usage": "For services provided via telemedicine",
+    "rules": [
+      "Real-time audio and video required",
+      "Payer must accept telemedicine",
+      "Patient consent may be required",
+      "Same reimbursement as in-person (many payers)"
+    ],
+    "common_with": ["E/M codes", "Psychotherapy codes"],
+    "common_errors": [
+      "Using for audio-only services",
+      "Not obtaining patient consent"
+    ]
+  },
+  "AI": {
+    "code": "AI",
+    "description": "Principal Physician of Record",
+    "usage": "Identify the physician who oversees the patient's care",
+    "rules": [
+      "Used in teaching settings",
+      "Identifies attending physician",
+      "Only one physician per patient"
+    ],
+    "common_with": ["Hospital E/M codes"],
+    "common_errors": [
+      "Multiple physicians using for same patient"
+    ]
+  },
+  "LT": {
+    "code": "LT",
+    "description": "Left Side",
+    "usage": "Identify procedures performed on the left side of the body",
+    "rules": [
+      "For bilateral anatomical structures",
+      "Must specify left side in documentation",
+      "Cannot be used with modifier 50"
+    ],
+    "common_with": ["Surgical procedures", "Radiology"],
+    "common_errors": [
+      "Using with modifier 50",
+      "Incorrect anatomical documentation"
+    ]
+  },
+  "RT": {
+    "code": "RT",
+    "description": "Right Side",
+    "usage": "Identify procedures performed on the right side of the body",
+    "rules": [
+      "For bilateral anatomical structures",
+      "Must specify right side in documentation",
+      "Cannot be used with modifier 50"
+    ],
+    "common_with": ["Surgical procedures", "Radiology"],
+    "common_errors": [
+      "Using with modifier 50",
+      "Incorrect anatomical documentation"
+    ]
+  },
+  "XE": {
+    "code": "XE",
+    "description": "Separate Encounter",
+    "usage": "Service is distinct because it occurred during a separate encounter on the same date",
+    "rules": [
+      "Subset of modifier 59",
+      "More specific than 59",
+      "Different encounter on same day",
+      "Preferred over 59 when applicable"
+    ],
+    "common_with": ["E/M codes", "Procedures"],
+    "common_errors": [
+      "Using with modifier 59 simultaneously"
+    ]
+  },
+  "XP": {
+    "code": "XP",
+    "description": "Separate Practitioner",
+    "usage": "Service is distinct because it was performed by a different practitioner",
+    "rules": [
+      "Subset of modifier 59",
+      "More specific than 59",
+      "Different practitioner",
+      "Preferred over 59 when applicable"
+    ],
+    "common_with": ["All procedure codes"],
+    "common_errors": [
+      "Using with modifier 59 simultaneously"
+    ]
+  },
+  "XS": {
+    "code": "XS",
+    "description": "Separate Structure",
+    "usage": "Service is distinct because it was performed on a separate organ/structure",
+    "rules": [
+      "Subset of modifier 59",
+      "More specific than 59",
+      "Different anatomical structure",
+      "Preferred over 59 when applicable"
+    ],
+    "common_with": ["Surgical procedures"],
+    "common_errors": [
+      "Using with modifier 59 simultaneously"
+    ]
+  },
+  "XU": {
+    "code": "XU",
+    "description": "Unusual Non-Overlapping Service",
+    "usage": "Service is distinct because it does not overlap usual components of the main service",
+    "rules": [
+      "Subset of modifier 59",
+      "More specific than 59",
+      "Use when no other X modifier applies",
+      "Preferred over 59 when applicable"
+    ],
+    "common_with": ["All procedure codes"],
+    "common_errors": [
+      "Using with modifier 59 simultaneously"
+    ]
+  },
+  "TC": {
+    "code": "TC",
+    "description": "Technical Component",
+    "usage": "When only the technical portion of a procedure is performed",
+    "rules": [
+      "For procedures with professional and technical components",
+      "Only technical portion billed",
+      "Common in radiology and pathology",
+      "Cannot be used with modifier 26"
+    ],
+    "common_with": ["Radiology codes", "Pathology codes"],
+    "common_errors": [
+      "Using with modifier 26 simultaneously",
+      "Using on codes without component split"
+    ]
+  },
+  "26": {
+    "code": "26",
+    "description": "Professional Component",
+    "usage": "When only the professional portion of a procedure is performed",
+    "rules": [
+      "For procedures with professional and technical components",
+      "Only interpretation/professional portion billed",
+      "Common in radiology and pathology",
+      "Cannot be used with modifier TC"
+    ],
+    "common_with": ["Radiology codes", "Pathology codes"],
+    "common_errors": [
+      "Using with modifier TC simultaneously",
+      "Using on codes without component split"
+    ]
+  }
+}

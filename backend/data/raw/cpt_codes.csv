@@ -1,0 +1,105 @@
+code,description,time_minutes,complexity_level,avg_charge,category,requires_diagnosis
+99201,Office visit new patient minimal,10,minimal,50,E/M,yes
+99202,Office visit new patient low,20,low,85,E/M,yes
+99203,Office visit new patient moderate,30,moderate,135,E/M,yes
+99204,Office visit new patient moderate-high,45,moderate-high,210,E/M,yes
+99205,Office visit new patient high,60,high,310,E/M,yes
+99211,Office visit established patient minimal,5,minimal,45,E/M,yes
+99212,Office visit established patient low,10,low,85,E/M,yes
+99213,Office visit established patient moderate,15,moderate,135,E/M,yes
+99214,Office visit established patient moderate-high,25,moderate-high,185,E/M,yes
+99215,Office visit established patient high,40,high,275,E/M,yes
+99217,Observation care discharge,30,moderate,125,E/M,yes
+99218,Initial observation care low,30,low,150,E/M,yes
+99219,Initial observation care moderate,50,moderate,225,E/M,yes
+99220,Initial observation care high,70,high,300,E/M,yes
+99221,Initial hospital care low,30,low,150,E/M,yes
+99222,Initial hospital care moderate,50,moderate,225,E/M,yes
+99223,Initial hospital care high,70,high,300,E/M,yes
+99231,Subsequent hospital care low,15,low,75,E/M,yes
+99232,Subsequent hospital care moderate,25,moderate,125,E/M,yes
+99233,Subsequent hospital care high,35,high,175,E/M,yes
+99238,Hospital discharge day 30 min or less,30,moderate,125,E/M,yes
+99239,Hospital discharge day more than 30 min,60,moderate,175,E/M,yes
+99281,Emergency dept visit minimal,10,minimal,100,E/M,yes
+99282,Emergency dept visit low,20,low,175,E/M,yes
+99283,Emergency dept visit moderate,30,moderate,250,E/M,yes
+99284,Emergency dept visit high,45,high,400,E/M,yes
+99285,Emergency dept visit critical,60,critical,600,E/M,yes
+99291,Critical care first hour,60,critical,500,E/M,yes
+99292,Critical care each additional 30 min,30,critical,250,E/M,yes
+99381,Preventive visit new patient infant,30,preventive,175,Preventive,no
+99382,Preventive visit new patient 1-4 years,30,preventive,175,Preventive,no
+99383,Preventive visit new patient 5-11 years,30,preventive,175,Preventive,no
+99384,Preventive visit new patient 12-17 years,30,preventive,200,Preventive,no
+99385,Preventive visit new patient 18-39 years,30,preventive,200,Preventive,no
+99386,Preventive visit new patient 40-64 years,30,preventive,225,Preventive,no
+99387,Preventive visit new patient 65+ years,30,preventive,225,Preventive,no
+99391,Preventive visit established patient infant,20,preventive,150,Preventive,no
+99392,Preventive visit established patient 1-4 years,20,preventive,150,Preventive,no
+99393,Preventive visit established patient 5-11 years,20,preventive,150,Preventive,no
+99394,Preventive visit established patient 12-17 years,20,preventive,175,Preventive,no
+99395,Preventive visit established patient 18-39 years,20,preventive,175,Preventive,no
+99396,Preventive visit established patient 40-64 years,20,preventive,200,Preventive,no
+99397,Preventive visit established patient 65+ years,20,preventive,200,Preventive,no
+10060,Incision and drainage of abscess,15,minor,150,Minor Surgery,yes
+10061,Incision and drainage complicated,25,minor,225,Minor Surgery,yes
+11042,Debridement subcutaneous tissue,20,minor,180,Minor Surgery,yes
+11043,Debridement muscle and/or fascia,30,minor,270,Minor Surgery,yes
+11200,Removal of skin tags 15 or fewer,10,minor,100,Minor Surgery,yes
+12001,Simple repair superficial wounds face 2.5 cm or less,15,minor,200,Minor Surgery,yes
+12002,Simple repair superficial wounds scalp 2.5 cm or less,15,minor,200,Minor Surgery,yes
+17000,Destruction benign or premalignant lesion first,10,minor,150,Minor Surgery,yes
+17110,Destruction flat warts 14 or fewer,10,minor,125,Minor Surgery,yes
+20610,Arthrocentesis aspiration major joint,10,minor,175,Minor Surgery,yes
+29125,Application short arm splint,10,minor,150,Minor Surgery,yes
+29505,Application long leg splint,15,minor,200,Minor Surgery,yes
+36415,Venipuncture routine,5,minimal,25,Laboratory,yes
+43235,Upper gastrointestinal endoscopy diagnostic,30,moderate,750,GI Procedures,yes
+43239,Upper gastrointestinal endoscopy with biopsy,35,moderate,950,GI Procedures,yes
+45378,Colonoscopy diagnostic,45,moderate,1200,GI Procedures,yes
+45380,Colonoscopy with biopsy,50,moderate,1400,GI Procedures,yes
+45385,Colonoscopy with removal of polyp,60,moderate,1650,GI Procedures,yes
+51798,Measurement of post-voiding residual urine,10,minimal,75,Urology,yes
+69210,Removal impacted ear wax,10,minimal,85,ENT,yes
+71045,Chest X-ray single view,5,minimal,75,Radiology,yes
+71046,Chest X-ray two views,5,minimal,90,Radiology,yes
+73030,Shoulder X-ray minimum 2 views,5,minimal,85,Radiology,yes
+73060,Humerus X-ray minimum 2 views,5,minimal,85,Radiology,yes
+73110,Wrist X-ray minimum 3 views,5,minimal,85,Radiology,yes
+73610,Ankle X-ray minimum 3 views,5,minimal,85,Radiology,yes
+80053,Comprehensive metabolic panel,5,minimal,45,Laboratory,yes
+81001,Urinalysis automated,5,minimal,15,Laboratory,yes
+82947,Glucose quantitative blood,5,minimal,20,Laboratory,yes
+82962,Glucose blood by monitoring device,5,minimal,15,Laboratory,yes
+83036,Hemoglobin A1C,5,minimal,35,Laboratory,yes
+85025,Complete blood count with differential,5,minimal,30,Laboratory,yes
+85610,Prothrombin time,5,minimal,25,Laboratory,yes
+86580,Skin test tuberculosis,10,minimal,40,Laboratory,yes
+87070,Culture bacterial any source,10,minimal,50,Laboratory,yes
+87086,Urine culture bacterial,10,minimal,45,Laboratory,yes
+87880,Strep test direct optical observation,10,minimal,35,Laboratory,yes
+90471,Immunization administration first component,10,minimal,25,Immunizations,no
+90472,Immunization administration each additional,5,minimal,15,Immunizations,no
+90632,Hepatitis A vaccine adult,5,minimal,75,Immunizations,no
+90649,HPV vaccine,5,minimal,200,Immunizations,no
+90656,Influenza vaccine trivalent,5,minimal,40,Immunizations,no
+90658,Influenza vaccine trivalent,5,minimal,40,Immunizations,no
+90685,Influenza vaccine quadrivalent,5,minimal,45,Immunizations,no
+90686,Influenza vaccine quadrivalent,5,minimal,45,Immunizations,no
+90707,MMR vaccine,5,minimal,95,Immunizations,no
+90714,Td vaccine,5,minimal,45,Immunizations,no
+90715,Tdap vaccine,5,minimal,55,Immunizations,no
+93000,Electrocardiogram complete,10,minimal,85,Cardiology,yes
+93005,Electrocardiogram tracing only,5,minimal,50,Cardiology,yes
+93010,Electrocardiogram interpretation only,5,minimal,35,Cardiology,yes
+96372,Therapeutic injection subcutaneous or intramuscular,5,minimal,35,Injections,yes
+96374,Therapeutic injection intravenous push,10,minimal,75,Injections,yes
+96413,Chemotherapy administration intravenous infusion,60,moderate,350,Chemotherapy,yes
+96415,Chemotherapy administration each additional hour,60,moderate,200,Chemotherapy,yes
+97110,Therapeutic exercises,15,moderate,65,Physical Therapy,yes
+97112,Neuromuscular reeducation,15,moderate,65,Physical Therapy,yes
+97140,Manual therapy,15,moderate,70,Physical Therapy,yes
+99000,Handling and/or conveyance of specimen,5,minimal,15,Miscellaneous,no
+G0008,Administration of influenza vaccine,5,minimal,25,Medicare,no
+G0009,Administration of pneumococcal vaccine,5,minimal,25,Medicare,no

@@ -1,0 +1,205 @@
+{
+  "icd10_rules": {
+    "pregnancy_codes": {
+      "code_range": "O00-O9A",
+      "description": "Pregnancy, childbirth and the puerperium",
+      "gender": "F",
+      "age_min": 12,
+      "age_max": 55,
+      "severity": "critical",
+      "explanation": "Pregnancy-related codes can only be used for females of childbearing age"
+    },
+    "prostate_codes": {
+      "code_range": "N40-N42",
+      "description": "Diseases of male genital organs - Prostate",
+      "gender": "M",
+      "age_min": 30,
+      "age_max": null,
+      "severity": "critical",
+      "explanation": "Prostate-related codes can only be used for males"
+    },
+    "testicular_codes": {
+      "code_range": "N43-N51",
+      "description": "Other diseases of male genital organs",
+      "gender": "M",
+      "age_min": 0,
+      "age_max": null,
+      "severity": "critical",
+      "explanation": "Male genital organ codes can only be used for males"
+    },
+    "menopause_codes": {
+      "code_range": "N95",
+      "description": "Menopausal and other perimenopausal disorders",
+      "gender": "F",
+      "age_min": 35,
+      "age_max": 65,
+      "severity": "high",
+      "explanation": "Menopause-related codes are typically applicable to women age 35-65"
+    },
+    "menstruation_codes": {
+      "code_range": "N91-N94",
+      "description": "Menstruation disorders",
+      "gender": "F",
+      "age_min": 12,
+      "age_max": 55,
+      "severity": "high",
+      "explanation": "Menstruation disorder codes can only be used for females of menstruating age"
+    },
+    "female_genital_codes": {
+      "code_range": "N70-N77",
+      "description": "Inflammatory diseases of female pelvic organs",
+      "gender": "F",
+      "age_min": 12,
+      "age_max": null,
+      "severity": "critical",
+      "explanation": "Female pelvic organ codes can only be used for females"
+    },
+    "ovarian_codes": {
+      "code_range": "N80-N84",
+      "description": "Noninflammatory disorders of female genital tract",
+      "gender": "F",
+      "age_min": 12,
+      "age_max": null,
+      "severity": "critical",
+      "explanation": "Female genital tract codes can only be used for females"
+    },
+    "breast_female_codes": {
+      "code_range": "N60-N65",
+      "description": "Disorders of breast (female)",
+      "gender": "F",
+      "age_min": 12,
+      "age_max": null,
+      "severity": "medium",
+      "explanation": "Female breast disorder codes should typically be used for females (males can have breast conditions but less common)"
+    },
+    "pediatric_congenital": {
+      "code_range": "Q00-Q99",
+      "description": "Congenital malformations",
+      "gender": null,
+      "age_min": 0,
+      "age_max": 18,
+      "severity": "medium",
+      "explanation": "Congenital conditions are typically diagnosed in pediatric patients, though can persist into adulthood"
+    },
+    "senile_codes": {
+      "code_range": ["R54", "G30", "F01", "F03"],
+      "description": "Age-related conditions",
+      "gender": null,
+      "age_min": 60,
+      "age_max": null,
+      "severity": "medium",
+      "explanation": "These conditions typically occur in elderly patients"
+    }
+  },
+  "cpt_rules": {
+    "preventive_infant": {
+      "code_range": ["99381", "99391"],
+      "description": "Preventive visit - infant (under 1 year)",
+      "gender": null,
+      "age_min": 0,
+      "age_max": 1,
+      "severity": "high",
+      "explanation": "This preventive code is specifically for infants under 1 year"
+    },
+    "preventive_early_childhood": {
+      "code_range": ["99382", "99392"],
+      "description": "Preventive visit - early childhood (1-4 years)",
+      "gender": null,
+      "age_min": 1,
+      "age_max": 4,
+      "severity": "high",
+      "explanation": "This preventive code is specifically for children ages 1-4"
+    },
+    "preventive_late_childhood": {
+      "code_range": ["99383", "99393"],
+      "description": "Preventive visit - late childhood (5-11 years)",
+      "gender": null,
+      "age_min": 5,
+      "age_max": 11,
+      "severity": "high",
+      "explanation": "This preventive code is specifically for children ages 5-11"
+    },
+    "preventive_adolescent": {
+      "code_range": ["99384", "99394"],
+      "description": "Preventive visit - adolescent (12-17 years)",
+      "gender": null,
+      "age_min": 12,
+      "age_max": 17,
+      "severity": "high",
+      "explanation": "This preventive code is specifically for adolescents ages 12-17"
+    },
+    "preventive_young_adult": {
+      "code_range": ["99385", "99395"],
+      "description": "Preventive visit - young adult (18-39 years)",
+      "gender": null,
+      "age_min": 18,
+      "age_max": 39,
+      "severity": "high",
+      "explanation": "This preventive code is specifically for adults ages 18-39"
+    },
+    "preventive_middle_age": {
+      "code_range": ["99386", "99396"],
+      "description": "Preventive visit - middle age (40-64 years)",
+      "gender": null,
+      "age_min": 40,
+      "age_max": 64,
+      "severity": "high",
+      "explanation": "This preventive code is specifically for adults ages 40-64"
+    },
+    "preventive_senior": {
+      "code_range": ["99387", "99397"],
+      "description": "Preventive visit - senior (65+ years)",
+      "gender": null,
+      "age_min": 65,
+      "age_max": null,
+      "severity": "high",
+      "explanation": "This preventive code is specifically for adults 65 and older"
+    },
+    "pediatric_exam": {
+      "code_range": "Z00.121",
+      "description": "Routine child health examination",
+      "gender": null,
+      "age_min": 0,
+      "age_max": 18,
+      "severity": "high",
+      "explanation": "Child health examinations are for patients under 18"
+    },
+    "colonoscopy_screening": {
+      "code_range": ["Z12.11", "45378"],
+      "description": "Screening colonoscopy",
+      "gender": null,
+      "age_min": 45,
+      "age_max": null,
+      "severity": "medium",
+      "explanation": "Screening colonoscopy is typically recommended starting at age 45"
+    },
+    "mammogram_screening": {
+      "code_range": ["Z12.31"],
+      "description": "Screening mammogram",
+      "gender": "F",
+      "age_min": 40,
+      "age_max": null,
+      "severity": "high",
+      "explanation": "Screening mammograms are for women, typically starting at age 40"
+    },
+    "prostate_screening": {
+      "code_range": ["Z12.5"],
+      "description": "Prostate cancer screening",
+      "gender": "M",
+      "age_min": 50,
+      "age_max": null,
+      "severity": "high",
+      "explanation": "Prostate screening is for men, typically starting at age 50"
+    }
+  },
+  "validation_priority": {
+    "critical": "Anatomically impossible (e.g., male pregnancy)",
+    "high": "Age-specific code mismatch (e.g., pediatric code for adult)",
+    "medium": "Atypical but possible (e.g., congenital condition in adult)",
+    "low": "Statistical outlier but medically valid"
+  },
+  "exemptions": {
+    "transgender_considerations": "Gender-specific anatomical codes may be valid for transgender patients. Use clinical judgment.",
+    "age_ranges_flexible": "Age ranges are guidelines; clinical documentation should support any deviations."
+  }
+}

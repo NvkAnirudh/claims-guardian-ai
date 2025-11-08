@@ -1,0 +1,31 @@
+{
+  "claim_id": "CLM002",
+  "patient": {
+    "name": "Jane Test",
+    "dob": "2020-01-01",
+    "gender": "F",
+    "insurance_id": "TEST123456789"
+  },
+  "provider": {
+    "name": "Dr. Test",
+    "npi": "9999999999",
+    "specialty": "Testing"
+  },
+  "service_date": "2025-01-15",
+  "diagnosis_codes": ["Z00.00"],
+  "procedure_codes": [
+    {
+      "cpt": "99205",
+      "modifiers": [],
+      "units": 1,
+      "charge": 500.00
+    },
+    {
+      "cpt": "99213",
+      "modifiers": [],
+      "units": 1,
+      "charge": 135.00
+    }
+  ],
+  "total_charge": 635.00
+}
