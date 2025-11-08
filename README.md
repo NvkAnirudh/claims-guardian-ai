@@ -24,7 +24,7 @@ An intelligent multi-agent system for automated medical claims validation using 
 - [Performance Metrics](#performance-metrics)
 - [Sample Validation Output](#sample-validation-output)
 - [Development](#development)
-  - [Running Tests](#running-tests)
+  - [Testing](#testing)
   - [Database Management](#database-management)
   - [Add More Medical Codes](#add-more-medical-codes)
 - [Technical Highlights](#technical-highlights)
@@ -332,10 +332,43 @@ prototype_1/
 
 ## Development
 
-### Running Tests
+### Testing
+
+ 
+
+**Unit tests are not yet implemented.** To add tests:
+
+ 
+
 ```bash
+# Create tests directory
+mkdir -p backend/tests
+
+# Install pytest
 cd backend
-pytest tests/
+
+pip install pytest pytest-asyncio httpx
+
+# Create a sample test file
+cat > tests/test_validators.py << 'EOF'
+
+import pytest
+
+from app.agents.cpt_icd_validator import CPTICDValidator
+
+from app.models.claim import Claim, Patient, Provider, ProcedureCode
+
+from datetime import date
+
+def test_cpt_icd_validator():
+
+    # Add your tests here
+
+    pass
+EOF
+
+# Run tests
+pytest tests/ -v
 ```
 
 ### Database Management
@@ -349,6 +382,7 @@ pytest tests/
 ```bash
 docker compose down -v
 docker compose up --build
+docker exec claims_backend python scripts/init_database.py
 ```
 
 ### Add More Medical Codes
@@ -358,7 +392,7 @@ Edit files in `backend/data/raw/`:
 - `cpt_codes.csv` - Add procedure codes
 - `modifier_rules.json` - Add modifier rules
 
-Then restart: `docker compose restart avelis_backend`
+Then restart: `docker compose restart claims_backend`
 
 ## Technical Highlights
 
